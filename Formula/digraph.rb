@@ -1,8 +1,8 @@
 class Digraph < Formula
   desc "Monitor and detect policy violations in infrastructure deploys using Digraph"
   homepage "https://www.getdigraph.com"
-  url "https://github.com/di-graph/digraph-cli/archive/refs/tags/v0.0.12.tar.gz"
-  sha256 "01d23f9478f2b75350d879d85c307e34fdb50a06348d7f6011f5c570d3b143b4"
+  url "https://github.com/di-graph/digraph-cli/archive/refs/tags/v0.0.13.tar.gz"
+  sha256 "3ad7a88e5623d1a5310d8ec257cf2d375f5fe0c9200bf5331efa1867c3c4db77"
   license "MIT"
   head "https://github.com/di-graph/digraph-cli.git", branch: "main"
 
@@ -14,9 +14,7 @@ class Digraph < Formula
     bin_path = buildpath/"src/github.com/di-graph/digraph"
     bin_path.install Dir["*"]
     cd bin_path do
-      # Install the compiled binary into Homebrew's `bin` - a pre-existing
-      # global variable
-      system "go", "build", "-o", bin/"digraph", "."
+    system "go", "build", "-o", bin/"digraph", "."
     end
   end
 
