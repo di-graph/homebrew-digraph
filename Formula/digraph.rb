@@ -1,8 +1,8 @@
 class Digraph < Formula
   desc "Monitor and detect policy violations in infrastructure deploys using Digraph"
   homepage "https://www.getdigraph.com"
-  url "https://github.com/di-graph/digraph-cli/archive/refs/tags/v0.0.22.tar.gz"
-  sha256 "99884a779d1193b13e198a1480f809eb631bc205a05ecb8fe25c75814e28f32d"
+  url "https://github.com/di-graph/digraph-cli/archive/refs/tags/v0.0.23.tar.gz"
+  sha256 "6f4bd5b760a4d253ee7a3746cba40fdf89bfc8a5b9e787e339eaea69034c78db"
   license "MIT"
   head "https://github.com/di-graph/digraph-cli.git", branch: "main"
 
